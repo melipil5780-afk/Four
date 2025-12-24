@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Progress | Solution-Focused Therapy</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --action-teal: #0D7377;
+            --dark-slate: #212121;
+            --bg-light: #F4F7F7;
+            --white: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--dark-slate);
+            line-height: 1.6;
+        }
+
+        /* 1. HERO SECTION */
+        header {
+            background: linear-gradient(135deg, var(--dark-slate) 0%, #323232 100%);
+            color: white;
+            padding: 12vh 1.5rem;
+            text-align: center;
+            border-bottom: 5px solid var(--action-teal);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.2rem, 8vw, 3.8rem);
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.8;
+        }
+
+        .cta-btn {
+            background: var(--action-teal);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        /* 2. THREE PILLARS (CBT/DBT) */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: -4rem auto 4rem;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid var(--action-teal);
+        }
+
+        .card h3 { font-family: 'Montserrat', sans-serif; color: var(--action-teal); }
+
+        /* 3. ROADMAP (STEP 1-2-3) */
+        .roadmap-container {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .step {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 3.5rem;
+            border-left: 2px dashed var(--action-teal);
+        }
+
+        .step-num {
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            background: var(--action-teal);
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .step-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* 4. FAQ SECTION */
+        .faq-section {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item {
+            background: #EBF3F3;
+            margin-bottom: 1rem;
+            padding: 1.2rem;
+            border-radius: 8px;
+        }
+
+        /* 5. CONTACT FORM */
+        .contact-section {
+            background: var(--dark-slate);
+            color: white;
+            padding: 5rem 1.5rem;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 2rem auto 0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: none;
+            font-size: 16px;
+        }
+
+        footer { text-align: center; padding: 3rem; font-size: 0.8rem; opacity: 0.5; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Measurable Progress. Real Relief.</h1>
+        <p>Active, skill-based therapy to help you break through anxiety, depression, and life's transitions.</p>
+        <a href="#contact" class="cta-btn">Book Your Blueprint Session</a>
+    </header>
+
+    <main>
+        <div class="pillars">
+            <div class="card">
+                <h3>Cognitive Tools</h3>
+                <p>Rewire the thought patterns that fuel anxiety and low mood.</p>
+            </div>
+            <div class="card">
+                <h3>Skill Training</h3>
+                <p>Concrete DBT skills for emotional regulation and distress tolerance.</p>
+            </div>
+            <div class="card">
+                <h3>Goal Focus</h3>
+                <p>Practical steps to move from where you are to where you want to be.</p>
+            </div>
+        </div>
+
+        <section class="roadmap-container">
+            <h2 style="text-align:center; font-family:'Montserrat'; margin-bottom:3rem;">How We Work</h2>
+            <div class="step">
+                <div class="step-num">01</div>
+                <div class="step-box">
+                    <h3>The Blueprint Session</h3>
+                    <p>We assess your current patterns and set specific, measurable goals for our work together.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">02</div>
+                <div class="step-box">
+                    <h3>Skill Building</h3>
+                    <p>We meet weekly to learn and practice the tools needed to manage symptoms in real-time.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">03</div>
+                <div class="step-box">
+                    <h3>Independence</h3>
+                    <p>Once your toolkit is full, we transition you out of therapy so you can lead your life confidently.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 style="text-align:center; font-family:'Montserrat';">Common Questions</h2>
+            <div class="faq-item">
+                <strong>How long is each session?</strong>
+                <p>Sessions are 50 minutes, focused entirely on skill-building and progress tracking.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Is this "talk therapy"?</strong>
+                <p>It's more than that. It's active. You will leave sessions with work to do and skills to practice.</p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Start Your Progress</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="4" placeholder="What goal do you want to achieve?"></textarea>
+                <button type="submit" style="width:100%; background:var(--action-teal); color:white; border:none; padding:1.2rem; font-weight:700; cursor:pointer; border-radius:4px;">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 ACTIVE PROGRESS THERAPY • EVIDENCE-BASED CARE
+    </footer>
+
+</body>
+</html>
